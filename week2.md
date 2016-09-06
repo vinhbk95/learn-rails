@@ -15,7 +15,7 @@
   - `$rails generate scaffold micropost user_id:integer content:string`
   - `$rake db:migrate RAILS_ENV=development`
   - Test thử ở link http://localhost:3000/users và http://localhost:3000/mircoposts
-- Hiển thị microposts của mội user:
+- Hiển thị microposts của một user:
   - sửa file `blog/app/views/users/show.html.erb`
   ``` html
   <p id="notice"><%= notice %></p>
@@ -34,7 +34,7 @@
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>
   ```
-- Hiển thị combobox cọn user lúc têm micropost
+- Hiển thị combobox chọn user lúc thêm micropost
   - Sửa file: `blog/app/views/micropost/_form.html.erb`
   ``` html
   <%= form_for(@micropost) do |f| %>
